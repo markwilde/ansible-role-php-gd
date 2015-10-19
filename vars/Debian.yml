@@ -1,0 +1,3 @@
+---
+apt_package: php5-gd
+php_gd_ini_filename: gd

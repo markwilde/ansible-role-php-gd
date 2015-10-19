@@ -1,0 +1,8 @@
+---
+- name: debian | install gd module for php
+  apt: name={{apt_package}} state=installed
+
+- name: debian | enable gd module for php
+  command: php5enmod {{php_gd_ini_filename}}
+  args:
+    creates: "{{ansible_local.phpinfo_core.php_config_file_scan_dir}}/{{php_gd_extension_priority}}-{{php_gd_ini_filename}}.ini"

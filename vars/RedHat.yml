@@ -1,0 +1,3 @@
+---
+yum_package: php-gd
+php_gd_ini_filename: gd
